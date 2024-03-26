@@ -1,3 +1,4 @@
+import 'package:expense_app/screens/widgets/current_account.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,6 +28,18 @@ class HomeScreen extends StatelessWidget {
                   color: Colors.blue,
                 )),
           ),
+        ],
+      ),
+      body: Column(
+        children: [
+          //current account
+          CurrentAccount(),
+
+          //cards
+
+          //account manage
+
+          //transactions
         ],
       ),
     );
