@@ -1,3 +1,4 @@
+import 'package:expense_app/screens/widgets/credit_card.dart';
 import 'package:expense_app/screens/widgets/current_account.dart';
 import 'package:flutter/material.dart';
 
@@ -30,12 +31,14 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
+      body: const Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           //current account
           CurrentAccount(),
 
           //cards
+          CreditCard(),
 
           //account manage
 
