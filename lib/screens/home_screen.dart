@@ -1,6 +1,8 @@
+import 'package:expense_app/screens/widgets/account_manage.dart';
 import 'package:expense_app/screens/widgets/credit_card.dart';
 import 'package:expense_app/screens/widgets/current_account.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -41,6 +43,10 @@ class HomeScreen extends StatelessWidget {
           CreditCard(),
 
           //account manage
+          Align(
+            alignment: Alignment.center,
+            child: AccountManage(),
+          ),
 
           //transactions
         ],
