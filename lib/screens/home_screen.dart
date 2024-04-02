@@ -41,14 +41,37 @@ class HomeScreen extends StatelessWidget {
 
           //cards
           CreditCard(),
+          SizedBox(
+            height: 20,
+          ),
 
           //account manage
           Align(
             alignment: Alignment.center,
             child: AccountManage(),
           ),
-
+          SizedBox(
+            height: 20,
+          ),
           //transactions
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Transactions',
+                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.w500),
+                ),
+                Spacer(),
+                Text('See All'),
+                Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.blue,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
