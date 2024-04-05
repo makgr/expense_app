@@ -1,6 +1,7 @@
 import 'package:expense_app/screens/widgets/account_manage.dart';
 import 'package:expense_app/screens/widgets/credit_card.dart';
 import 'package:expense_app/screens/widgets/current_account.dart';
+import 'package:expense_app/screens/widgets/transaction_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -33,7 +34,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const Column(
+      body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           //current account
@@ -72,6 +73,7 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
+          Expanded(child: TransactionsList()),
         ],
       ),
     );
