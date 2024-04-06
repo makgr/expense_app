@@ -1,3 +1,4 @@
+import 'package:expense_app/main_screen.dart';
 import 'package:expense_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      // home: const HomeScreen(),
+      home: const MainScreen(),
     );
   }
 }
